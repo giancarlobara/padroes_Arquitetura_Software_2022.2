@@ -13,9 +13,13 @@ Projetar e implementar uma arquitetura de um sistema que viabilize a transferên
 
 ## Passo a passo de execução do software
 ### Requisitos
+
 nodejs instalado
+
 Postgresql
+
 Postman ou semelhante
+
 
 Raiz do projeto
 ```
@@ -34,7 +38,7 @@ cd .\prontuario\
 npm install
 node index.js
 ```
-ps: os 3 serviços tem que estar rodando para a aplicação funcionar com todas as funcionalidades
+**ps: os 3 serviços tem que estar rodando para a aplicação funcionar com todas as funcionalidades**
 ### URLs
 * localhost:3000 - index
 * localhost:3000/p-avatar - aplicação p-avatar
