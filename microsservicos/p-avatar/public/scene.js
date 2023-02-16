@@ -1,10 +1,9 @@
-const createText = function () {};
 const createPanel = async function (scene, data) {
   //Set font type
   var font_type = "Arial";
 
   //Set width an height for plane
-  var planeWidth = 1.5;
+  var planeWidth = 2;
   var planeHeight = 2;
 
   //Create plane
@@ -15,8 +14,8 @@ const createPanel = async function (scene, data) {
   );
 
   //Set width and height for dynamic texture using same multiplier
-  var DTWidth = planeWidth * 1000;
-  var DTHeight = planeHeight * 1000;
+  var DTWidth = planeWidth * 500;
+  var DTHeight = planeHeight * 500;
 
   //Set text
 
@@ -32,7 +31,7 @@ const createPanel = async function (scene, data) {
 
   //Check width of text for given font type at any size of font
   let ctx = dynamicTexture.getContext();
-  var size = 2; //any value will work
+  var size = 1; //any value will work
   ctx.font = size + "px " + font_type;
   var textWidth = ctx.measureText(name).width;
 

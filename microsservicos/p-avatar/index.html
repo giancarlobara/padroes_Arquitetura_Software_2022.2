@@ -25,12 +25,11 @@
       const canvas = document.getElementById("renderCanvas"); // Get the canvas element
       const engine = new BABYLON.Engine(canvas, true);
       $(document).ready(function () {
-        console.log("reade");
         load_data();
 
         function load_data() {
           $.ajax({
-            url: "http://localhost:3002/p-avatar/get",
+            url: "http://localhost:3000/prontuario/get",
             method: "GET",
             data: { action: "fetch" },
             dataType: "JSON",

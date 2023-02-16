@@ -12,6 +12,12 @@ app.get("/", (req, res) => res.send("Hello Gateway API"));
 app.get("/prontuario", (req, res, next) =>
   medicalRecordServiceProxy(req, res, next)
 );
+app.get("/prontuario/get", (req, res, next) =>
+  medicalRecordServiceProxy(req, res, next)
+);
+app.post("/prontuario", (req, res, next) =>
+  medicalRecordServiceProxy(req, res, next)
+);
 app.get("/p-avatar", (req, res, next) => pAvatarServiceProxy(req, res, next));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
